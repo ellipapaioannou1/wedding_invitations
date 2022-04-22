@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :invitations
   root to: 'invitations#welcome'
-  get 'sign_up', to: 'registrations#new'
-  post 'sign_up', to: 'registrations#create'
+  get 'sign_up', to: 'registration#new'
+  post 'sign_up', to: 'registration#create'
   get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'invitations#index', as: 'log_in'
   delete 'logout', to: 'sessions#destroy'

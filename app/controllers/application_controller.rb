@@ -8,5 +8,6 @@ class ApplicationController < ActionController::Base
           # allows only logged in user
           redirect_to sign_in_path, alert: 'You must be signed in' if Current.user.nil?
         end
+        
      
 end

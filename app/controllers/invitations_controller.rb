@@ -12,7 +12,7 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
 
   # GET /invitations/1 or /invitations/1.json
   def show
-  
+     
   end
 
   # GET /invitations/new
@@ -72,4 +72,5 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
     def invitation_params
       params.require(:invitation).permit(:name, :persons_count)
     end
+
 end
