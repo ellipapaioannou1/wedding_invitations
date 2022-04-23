@@ -1,5 +1,5 @@
 body {    
-     background-image: url("https://cdnb.artstation.com/p/assets/images/images/038/817/877/large/usagipan-3d-studios-penguin-couple1.jpg?1624150496");
+     background-image: url("https://images.unsplash.com/photo-1564986021890-6f721f19c210?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
      background-color: 	 #a7c592; 
      background-size: 100%;            
      color: black;                   
@@ -9,10 +9,6 @@ a {
         font-family: Arial; 
         font-size: 30px;      
         font-weight: bold; }
-h1{             
+h1{   text-align: center;          
         }
- <div class="container"> . </div>
-.container {
-        }
-.nav a {                   
-        }
+
