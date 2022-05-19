@@ -10,19 +10,18 @@
     </div>
   <% end %>
 
-  <div class="mb-3 align-items-center text-center">
+  <div class="mb-3 align-items-center">
    <div class="col-auto">
-   <div class="col-form-label">
     <%= form.label :name %>
      <%= form.text_field :name  %>
   </div>
 
-  <div class="mb-3  align-items-center text-center">
+  <div class="mb-3  align-items-center">
     <%= form.label :persons %>
     <%= form.number_field :persons_count %>
   </div>
 
-  <div class="actions btn btn-light btn-sm ">
-    <%= form.submit %>
-  </div>
+   
+  <%= form.submit 'Save', class:"btn btn-outline-secondary btn-lg"%>
+  
 <% end %>

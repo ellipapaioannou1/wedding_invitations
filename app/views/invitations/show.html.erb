@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong><h4>Name :</h4></strong>
   <%= @invitation.name  %>
@@ -8,7 +6,7 @@
 <p>
   <strong><h4>Persons :</h4></strong>
   <%= @invitation.persons_count %>
+  
 </p>
-
 <%= link_to 'Edit', edit_invitation_path(@invitation), class:"btn btn-light btn-lg" %> |
 <%= link_to 'Back', invitations_path, class:"btn btn-light btn-lg" %>

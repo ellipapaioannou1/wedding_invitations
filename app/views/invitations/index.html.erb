@@ -1,12 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div id="index-page">
+
 
 <figure class="text-center">
   <h1>Invitations</h1>
 </figure>
-<%= link_to 'New Invitation', new_invitation_path, class:"btn btn-warning btn-sm " %>
 
+<%= link_to 'New Invitation', new_invitation_path,  class:"btn btn-outline-secondary btn-lg" %>
 
-<table class="table table-bordered">
+<table>
+
   <thead>
     <tr>
       <th><h7>Name</h7></th>
@@ -17,25 +19,25 @@
   
   </thead>
 
-
   <tbody>
     <% @invitations.each do |invitation| %>
       <tr>
         <td><%= invitation.name%></td>
         <td><%= invitation.persons_count %></td>
         <td></td>  
-        <td width="1"><%= link_to 'Show', invitation, class:"btn btn-outline-dark btn-light btn-sm" %>        </td>
-        <td width="1"><%= link_to 'Edit',  edit_invitation_path(invitation), class:"btn btn-outline-dark btn-light  btn-sm" %></td>
-        <td width="1"><%= link_to 'Delete', invitation, class:"btn btn-outline-dark btn-light btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+        <td width="1"><%= link_to 'Show', invitation, class:"btn btn-outline-secondary btn-light btn-sm" %>        </td>
+        <td width="1"><%= link_to 'Edit',  edit_invitation_path(invitation), class:"btn btn-outline-secondary btn-light  btn-sm" %></td>
+        <td width="1"><%= link_to 'Delete', invitation, class:"btn btn-outline-secondary btn-light btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> </td>
       </tr>
     <% end %>
   </tbody>
   <tr>
-  <td colspan="0" style="text-align:right;"><b>Total Invitees:</b></td>
+  <td colspan="0" style="text-align:center;"><b>Total Invitees:</b></td>
   <td>Δεν έχω ιδεά πως το κάνω</td>
   </tr>
 
 </table>
+
 
 
 

@@ -1,6 +1,5 @@
 class InvitationsController < ApplicationController
 before_action :set_invitation, only: %i[ show edit update destroy ]
-
   def index
   end
   def home
@@ -12,7 +11,7 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
 
   # GET /invitations/1 or /invitations/1.json
   def show
-     
+   
   end
 
   # GET /invitations/new
@@ -38,7 +37,7 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
       end
     end
   end
-
+  
   # PATCH/PUT /invitations/1 or /invitations/1.json
   def update
     respond_to do |format|
@@ -72,5 +71,7 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
     def invitation_params
       params.require(:invitation).permit(:name, :persons_count)
     end
+  
+   
 
 end
