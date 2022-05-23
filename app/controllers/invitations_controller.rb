@@ -11,7 +11,8 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
 
   # GET /invitations/1 or /invitations/1.json
   def show
-   
+    @qr = RQRCode::QRCode.new( 'https://www.google.com/', :size => 3, :level => :h )
+    
   end
 
   # GET /invitations/new
@@ -72,6 +73,6 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
       params.require(:invitation).permit(:name, :persons_count)
     end
   
-   
+
 
 end
