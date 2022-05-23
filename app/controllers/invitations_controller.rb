@@ -27,7 +27,6 @@ before_action :set_invitation, only: %i[ show edit update destroy ]
   # POST /invitations or /invitations.json
   def create
     @invitation = Invitation.new(invitation_params)
-
     respond_to do |format|
       if @invitation.save
         format.html { redirect_to invitation_url(@invitation), notice: "Invitation was successfully created." }
